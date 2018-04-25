@@ -3,20 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <title>Index Page</title>
 </head>
 
 <body>
-<div class="container-fluid">
-<div class="container page-border">
-    <h1>Carlo Cappellini</h1>
-    <h1>Web Developer</h1>
+
+
+<div class="container-fluid page-border">
+    <div class="container page-border">
+
+        <div class="page-border">
+            <span class="text-left" id="welcome" hidden><h3></h3></span><h1 class="text-center">Carlo Cappellini</h1>
+        </div>
+
+        <div class="page-border col-sm-12">
+            <h3 class="text-center">Web Developer</h3>
+        </div>
+
+        <div class="row col-sm-12 text-center">
+            <nav class="nav-bar">
+                <ul class="unordered-list">
+                    <a href="resume.html">
+                        <li class="list">RESUME</li>
+                    </a>
+
+                    <a>
+                        <li class="list">
+                            CONTACT
+                        </li>
+                    </a>
+
+                    <a>
+                        <li class="list">
+                            BIO
+                        </li>
+                    </a>
+
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="page-border text-center col-sm-12" id="about-me">
+
+
+            <div class="row col-sm-6 page-border">
+                <img src="img/CarloCappellini1_preview.jpg" class="img-fluid img-thumbnail" width="250px" height="250px">
+
+            </div>
+            <div class="col-sm-6 text-center">
+                <h5>About Me:</h5>
+                </div>
+            <div class="col-sm-6 text-center">
+            <h4 class="text-center" id="summary">
+                Passionate and self-motivated full-stack web developer with strong technical skills including but not limited to object-oriented programming such as Java, JavaScript, jQuery, and MySQL. Having the ability to integrate code, design layouts, and create fully functional web applications is something I look forward to exercising in my daily life. I feel confident given my exceptional experience and knowledge to make a strong addition to your team.
+            </h4>
+            </div>
+
+        </div>
+
+
+        <div class="row" id="project-title">
+            <h2 class="page-border text-center">
+                PROJECTS
+            </h2>
+
+        </div>
+
+        <div class="row page-border">
+            <div class="page-border" id="project-list">
+                <div class="col-sm-4 page-border">
+                    <h3 class="text-center">Calculator</h3>
+                </div>
+                <div class="col-sm-4 page-border">
+                    <h3 class="text-center">LIVEMUSICISMYLIFE</h3>
+                </div>
+                <div class="col-sm-4 page-border">
+                    <h3 class="text-center">ADLISTER</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="page-border" id="project-description">
+                <div class="col-md-4 page-border">
+                    <h4 class="text-center">Collaborated in creating fully functional calculator using HTML, CSS and JavaScript logic. User can add, subtract, multiply and divide.</h4>
+                </div>
+
+                <div class="col-md-4 page-border">
+                    <h4 class="text-center"> Live music is my life is a spring boot web application using 2 API’s that allows users to search for local concerts, search for shows near you based on zip code, get bands info, follow favorite bands, write reviews for the events, create friendships between users etc. This application was made using HTML, Java, Spring Framework, Thymeleaf, Hibernate, CSS, MySQL and API integration.</h4>
+                </div>
+
+                <div class="col-md-4 page-border">
+                    <h4 class="text-center"> Is a Java application using MVC design pattern, CSS, HTML, servlets and JSP. Users can register an account, log in and log out, create ads and view other user’s ads.
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <div class="page-border footer text-center">
+            <h4 class="text-center">
+                Contact me: <a href="https://www.linkedin.com/feed/">Linkedin</a>
+            </h4>
+            <h4 class="text-center">
+                View My Code: <a href="https://github.com/carlocappellini">GitHub</a>
+            </h4>
+        </div>
+
+    </div>
 </div>
-</div>
 
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 
+<script type="text/javascript">
 
+    $(document).ready(function () {
+        $('#welcome').html("Welcome").css("font-size", '20px').css("margin-left", '20px').fadeIn(2000)
+
+    })
+</script>
 </body>
 </html>
