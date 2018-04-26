@@ -12,11 +12,11 @@
 <body>
 
 
-<div class="container-fluid page-border">
-    <div class="container page-border">
+<div class="container-fluid page-border body-margin">
+    <div class="container page-border" id="body-content">
 
         <div class=" row page-border center-block">
-            <span class="text-left" id="welcome"><h3></h3></span>
+            <h3> <span class="text-left" id="welcome"></span></h3>
             <h1 class="text-center">Carlo Cappellini</h1>
         </div>
 
@@ -24,59 +24,56 @@
             <h3 class="text-center">Web Developer</h3>
         </div>
 
-        <div class="row  text-center page-border center-block">
+
+        <div class="row  text-center page-border center-block navBar">
             <div class="page-border center-block text-center" >
                 <nav class="nav-bar text-center center-block">
-                    <ul class="unordered-list text-center">
-                        <a href="resume.html">
-
-                            <li class="list">RESUME</li>
-                        </a>
-
-                        <a>
-                            <li class="list">
-                                CONTACT
-                            </li>
-                        </a>
-
-                        <a>
-                            <li class="list">
-                                BIO
-                            </li>
-                        </a>
-
-                    </ul>
+                    <div class=" col-sm-12">
+                        <div class="col-sm-3">
+                            <a href="resume.html">| Resume |</a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a>| Home |</a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a>| Bio |</a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a>| Contact |</a>
+                        </div>
+                    </div>
                 </nav>
-            </div>
 
+            </div>
         </div>
 
 
-        <div class="page-border row col-sm-12 center-block" id="about-me">
+        <div class="page-border col-sm-12 center-block" id="about-me">
 
 
             <div class="col-sm-6 page-border ">
-                <img src="img/CarloCappellini1_preview.jpg" class="img-fluid img-thumbnail center-block" width="250px"
-                     height="250px">
+                <img src="img/CarloCappellini1_preview.jpg" class="img-fluid img-thumbnail center-block"
+                     height="300px" width="300px">
 
             </div>
 
-            <div class="col-sm-6 text-center page-border">
-                <h5>About Me:</h5>
+            <div class="col-sm-6 text-center page-border center-block">
+                <h2>About Me:</h2>
 
                 <h4 class="text-center" id="summary">
                     Passionate and self-motivated full-stack web developer with strong technical skills including but
                     not limited to object-oriented programming such as Java, JavaScript, jQuery, and MySQL. Having the
                     ability to integrate code, design layouts, and create fully functional web applications is something
                     I look forward to exercising in my daily life. I feel confident given my exceptional experience and
-                    knowledge to make a strong addition to your team.
+                    knowledge to make a strong addition to your team. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto autem distinctio eveniet ex impedit itaque iusto, maiores minus mollitia omnis quas quidem reiciendis similique vero voluptatem! Commodi eum sunt tenetur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad consectetur cum dignissimos dolorum explicabo, laudantium libero nam necessitatibus officiis optio pariatur quas quo reprehenderit saepe sed, tenetur vel vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, adipisci aut distinctio doloremque ea et facilis harum, in ipsum labore maxime minus, molestias nihil nulla perspiciatis quos rerum temporibus veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis fugiat harum modi nam perferendis quaerat reiciendis repudiandae sint sunt tempore! Accusantium beatae .
                 </h4>
+
             </div>
 
         </div>
 
 
-        <div class="row page-border center-block" id="project-title">
+        <div class="col-sm-12 page-border center-block" id="project-title">
             <h2 class="text-center">
                 PROJECTS
             </h2>
@@ -89,72 +86,77 @@
 
             <div class="col-md-4 page-border">
                 <div class="page-border">
-                    <h2 class="text-center">Calculator</h2>
+                    <h2 class="text-center p-title">Calculator</h2>
                 </div>
 
-                <div class="page-border ">
+                <div class="page-border i">
                     <img src="img/Screen Shot 2018-04-25 at 12.23.17 PM.png" class="img-thumbnail center-block"
-                         width="150px"
-                         height="auto" alt="">
+                         alt="">
                 </div>
 
                 <div class="page-border">
-                    <p class="text-center">Collaborated in creating fully functional calculator using HTML, CSS and
+                    <p class="text-center project-content">Collaborated in creating fully functional calculator using HTML, CSS and
                         JavaScript logic. User can add, subtract, multiply and divide.</p>
+                    <div class="page-border text-center"><a href="#">Calculator</a></div>
                 </div>
             </div>
 
 
             <div class="col-md-4 page-border">
-                <div class="page-border">
-                    <h2 class="text-center">Livemusicismylife</h2>
+                <div class="page-border" id="livemusicimage">
+                    <h2 class="text-center p-title">Livemusicismylife</h2>
                 </div>
 
-                <div class="page-border">
+                <div class="page-border i">
                     <img src="img/Screen%20Shot%202018-04-25%20at%2012.30.46%20PM.png"
-                         class="img-thumbnail center-block"
-                         width="150px" height="150px">
+                         class="img-thumbnail center-block" >
                 </div>
 
                 <div class="page-border ">
-                    <p class="text-center" id="live-music-desc"> Live music is my life is a spring boot web application
+                    <p class="text-center project-content" id="live-music-desc"> Live music is my life is a spring boot web application
                         using 2 API’s that allows users to search for local concerts, search for shows near you based on
                         zip
                         code, get bands info, follow favorite bands, write reviews for the events, create friendships
                         between users etc. This application was made using HTML, Java with Spring Framework, Thymeleaf,
                         Hibernate, CSS, MySQL and API integration.</p>
+                    <div class="page-border text-center"><a href="http://livemusicismy.life/">Live Music Is My Life</a></div>
                 </div>
+
             </div>
 
 
             <div class="col-md-4 page-border">
 
                 <div class="page-border">
-                    <h2 class= "text-center">Adlister</h2>
+                    <h2 class= "text-center p-title">Google Weather API</h2>
                 </div>
-                <div class="page-border">
-                    <img src="img/Screen Shot 2018-04-25 at 12.23.17 PM.png" class="img-thumbnail center-block"
-                         width="150px"
-                         height="auto" alt="">
+                <div class="page-border i">
+                    <img src="img/Screen Shot 2018-04-25 at 7.02.29 PM.png" class="img-thumbnail center-block"
+                       alt="">
                 </div>
 
                 <div class="page-border">
-                    <p class="text-center"> Is a Java application using MVC design pattern, CSS, HTML, servlets and JSP.
-                        Users can register an account, log in and log out, create ads and view other user’s ads.
+                    <p class="text-center project-content">Application using Google Maps and Open Weather API, that shows the location on the map and the weather forecast based on the search. This application was made using HTML5, CSS and javaScript.
                     </p>
+                    <div class="page-border text-center"><a href="#">Google Weather API</a></div>
                 </div>
 
             </div>
         </div>
-        <div class="page-border row col-sm-12 footer text-center center-block">
+        <div class="page-border row col-sm-12 footer text-center center-block foot">
             <div>
                 <h4 class="text-center">
-                    Contact me: <a href="https://www.linkedin.com/feed/">Linkedin</a>
+                    Contact Me: <a href="https://www.linkedin.com/feed/">Linkedin</a>
                 </h4>
             </div>
             <div>
                 <h4 class="text-center">
                     View My Code: <a href="https://github.com/carlocappellini">GitHub</a>
+                </h4>
+            </div>
+            <div>
+                <h4 class="text-center">
+                     <a a href="mailto:carloacappellini@gmail.com">Email Me</a>
                 </h4>
             </div>
 
@@ -171,9 +173,12 @@
 <script type="text/javascript">
 
     $(document).ready(function () {
-        $('#welcome').html("Welcome").css("font-size", '20px').css("margin-left", '20px').fadeIn(2000)
+        $('#welcome').text("Welcome").fadeIn(2000)
 
     })
 </script>
 </body>
 </html>
+
+
+
