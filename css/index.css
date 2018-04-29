@@ -5,9 +5,9 @@ html, body {
     background-color: skyblue;
     font-family:'Anton','sans-serif;';
 }
-/*.page-border{*/
-    /*border: 1px solid gray;*/
-/*}*/
+.page-border{
+    border: 1px solid gray;
+}
 .unordered-list {
     list-style-type: none;
     padding: 40px;
@@ -17,10 +17,10 @@ html, body {
     display: inline-flex;
 }
 
-/*#livemusicpic,.i{*/
-    /*width: 150px;*/
-    /*height: 150px;*/
-/*}*/
+#livemusicpic,.i{
+    width: 150px;
+    height: 150px;
+}
 #project-title{
     padding-top: 30px;
     margin-top: 30px;
@@ -68,3 +68,27 @@ align-items: stretch}
 .foot{
     border-top: 1px solid black;
 }
+
+@media (min-width: 576px) {
+    .nav-link {
+        display: inline-flex;
+        color: red;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .p-title {
+        font-size: 10px;
+    }
+}
+
+
+
+
+@media (min-width: 1200px) {}
