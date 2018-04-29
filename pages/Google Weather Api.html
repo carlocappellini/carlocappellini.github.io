@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map</title>
+
+    <style>
+        body, html {
+            width: 97%;
+        }
+
+        #render {
+
+            border: 1px solid black;
+            padding: inherit;
+        }
+
+        #map-canvas {
+            width: 470px;
+            height: 381px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body id="body">
+
+
+<input type="text" id="city" value="Peru">
+
+
+<button type="submit" id="search">Search Weather</button>
+
+<div id="show-weather">
+    <h1>ENTER WEATHER</h1>
+</div>
+
+<div id="map-canvas"></div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvF0muANVyPrJLrXQ-zQFjsImZk0uCa4U"></script>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+
+    /////////GOOGLE API////////////
+
+
+    var addressInput = document.getElementById('city');
+    var getAddress = document.getElementById('search');
+
+    getAddress.addEventListener('click', function () {
+        // get the address from the address text input
+        var address = addressInput.value;
+        initialize(address);
+    });
+
+
+
+    var mapOptions = {
+        zoom: 5,
+        mapTypeId: google.maps.MapTypeId.HYBRID
+    };
+
+
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+    var geocoder = new google.maps.Geocoder();
+
+
+    function initialize(address) {
+        // Geocode our address
+        geocoder.geocode({"address": address}, function (results, status) {
+            if (status === google.maps.GeocoderStatus.OK) {
+                map.setCenter(results[0].geometry.location);
+                var marker = new google.maps.Marker({
+                    position: results[0].geometry.location,
+                    map: map
+                });
+            } else {
+                // Show an error message with the status if our request fails
+                alert("Geocoding was not successful - STATUS: " + status);
+            }
+        });
+    }
+
+    initialize(addressInput.value);
+
+
+    //////////OPEN WEATHER API///////////
+
+    $(document).ready(function () {
+        $("#search").click(function () {
+            var city = $("#city").val();
+            var key = "99357dfa5d363d824f030db0ef9b6f77"
+
+            $.ajax({
+                url: "http://api.openweathermap.org/data/2.5/weather",
+                dataType: 'json',
+                type: 'GET',
+                data: {
+                    q: city, appid: key, units: 'imperial'
+                },
+                success: (function (data) {
+                    var html = '';
+                    $.each(data.weather, function (index, val) {
+                        html += '<div id="render"><b><h1>' + data.name +
+                            "</b><img src= http://openweathermap.org/img/w/" + data.weather[0].icon + ".png></h1>" + data.main.temp + '&deg;F' + ' | ' + val.main + " , " + val.description + '</div>'
+
+                    });
+                    $('#show-weather').html(html)
+
+
+                })
+            })
+
+        })
+    })
+
+
+</script>
+
+
+</body>
+</html>
