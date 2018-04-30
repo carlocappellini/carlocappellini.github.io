@@ -2,73 +2,103 @@
 
 
 html, body {
-    background-color: skyblue;
+    background-color: peachpuff;
     font-family:'Anton','sans-serif;';
 }
-.page-border{
-    border: 1px solid gray;
+/*.page-border{*/
+    /*border: 1px solid gray;*/
+/*}*/
+.unordered-list {
+list-style-type: none;
+padding: 40px;
 }
-/*.unordered-list {*/
-/*list-style-type: none;*/
-/*padding: 40px;*/
-/*}*/
 
-/*.list{*/
-/*display: inline-flex;*/
-/*}*/
+.list{
+display: inline-flex;
+}
 
-/*#livemusicpic,.i{*/
-/*width: 150px;*/
-/*height: 150px;*/
-/*}*/
-/*#project-title{*/
-/*padding-top: 30px;*/
-/*margin-top: 30px;*/
-/*padding-bottom: 30px;*/
-/*margin-bottom: 30px;*/
-/*}*/
+#livemusicpic{
+width: 130px;
+height: 130px;
+}
+.i{
+    width: auto;
+    height: auto;
+}
+#project-title{
+padding-top: 30px;
+margin-top: 30px;
+padding-bottom: 30px;
+margin-bottom: 30px;
+}
 
-/*#about-me{*/
-/*margin-top: 50px;*/
-/*border-top :1px solid black;*/
-
-/*border-bottom: 1px solid black;*/
-/*}*/
-/*#body-content{*/
+#pgcnt{
+margin-top: 50px;
+}
+#body-content{
 /*padding: 30px;*/
-/*border: 1px solid gray;*/
-/*}*/
-/*.body-margin {*/
-/*border: 1px solid gray;*/
+border: 1px solid gray;
+}
+.body-margin {
+border: 1px solid gray;
 
-/*padding: 60px;*/
-/*}*/
-/*.navBar{*/
-/*margin-top: 40px;*/
-/*margin-bottom: 40px;*/
+padding: 60px;
+}
+.navBar{
+margin-top: 40px;
+margin-bottom: 40px;
 
-/*}*/
-/*a:hover{*/
-/*text-decoration: none;*/
-/*border-bottom: 2px solid black;*/
-/*border-top: 2px solid black;  }*/
-/*.p-title{*/
-/*margin-top: 30px;*/
-/*margin-bottom: 30px;*/
-/*}*/
-/*.project-content{*/
-/*margin-top: 50px;*/
-/*margin-bottom: 50px;*/
-/*align-items: stretch}*/
+}
+a:hover{
+text-decoration: none;
+border-bottom: 2px solid black;
+border-top: 2px solid black;  }
+.p-title{
+margin-top: 30px;
+margin-bottom: 30px;
+}
 
 
-/*#live-music-desc {*/
-/*margin-top: 100px;*/
-/*}*/
-/*.foot{*/
-/*border-top: 1px solid black;*/
-/*}*/
+.foot{
+    margin-bottom: 60px;
+}
 
+.span-icon{
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+#skills{
+    margin-top: 0px;
+    padding-bottom:0;
+}
+.bullet{
+    list-style-type:square;
+    margin-bottom: 12px;
+    margin-top: 30px;
+}
+#b{
+    background-color: gray;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+
+}
+#head{
+    background-color: #31b0d5;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;  }
+
+
+
+
+
+
+
+
+
+
+.bottom-links:hover{
+    border: none;
+}
 @media (min-width: 576px) {
     .nav-link {
         display: inline-flex;
