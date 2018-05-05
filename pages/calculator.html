@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator JS</title>
+    <link rel="stylesheet" href="../css/custom.css">
+
+
+</head>
+<body>
+<script src="../js/calculator.js"></script>
+<div id="wrapper">
+    <div class="container">
+        <h3>SNEAKY CALCULATOR</h3>
+
+        <form name="calculator">
+
+            <div class="row-col">
+                <div><input type="text" value=""  class="big-column-one" name="left" readonly></div>
+                <div><input type="text" value=""  class="operator" name="operator" readonly></div>
+                <div><input type="text" value=""  class="big-column-two" name="right" readonly></div>
+
+
+
+            </div>
+
+
+            <div class="keys">
+                <div>
+                    <!-- operators and other keys -->
+                    <input type="button" name="1" value="1" class="buttons digit" onClick="btnClick(this)">
+                    <input type="button" name="2" value="2" class="buttons digit" onClick="btnClick(this)">
+                    <input type="button" name="3" value="3" class="buttons digit" onClick="btnClick(this)">
+                    <input type="button" name="+" class="operator buttons position" value="+" onClick="operClick(this)">
+                </div>
+                <br>
+                <div>
+                    <input type="button" name="4" value="4" class="buttons digit" onClick="btnClick(this)">
+                    <input type="button" name="5" value="5" class="buttons digit" onClick="btnClick(this)">
+                    <input type="button" name="6" value="6" class="buttons digit" onClick="btnClick(this)">
+                    <input type="button" name="-" class="operator buttons" value="-" onClick="operClick(this)">
+                </div>
+                <br>
+                <div>
+                    <input type="button" name="7" value="7" class="buttons digit" onClick="btnClick(this)">
+                    <input type="button" name="8" value="8" class="buttons digit" onClick="btnClick(this)">
+                    <input type="button" name="9" value="9" class="buttons digit" onClick="btnClick(this)">
+                    <input type="button" name="*" class="operator buttons" value="*" onClick="operClick(this)">
+                </div>
+                <br>
+                <div>
+                    <input type="button" name="C" class="clear buttons digit operator eqandc decimal" value="C" onClick="runClear()">
+                    <input type="button" name="0" value="0" class="buttons digit " onClick="btnClick(this)">
+                    <input type="button" name="decimal" value="." class="buttons digit decimal operator decimal-point" onClick="btnClick(this)">
+                    <input type="button" name="=" class="eval buttons digit operator eqandc decimal" value="=" onClick="total()">
+                    <input type="button" name="/" class="operator buttons decimal" value="/" onClick="operClick(this)">
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <script src="../js/calculator.js"></script>
+</div>
+</body>
+</html>
