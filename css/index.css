@@ -1,172 +1,180 @@
 @import url('https://fonts.googleapis.com/css?family=Anton');
 
-
 html, body {
-    background-color: peachpuff;
-    font-family:'Anton','sans-serif;';
+    background-color: #7f8a61;
+    font-family: 'Anton', 'sans-serif;';
 }
+
 /*.page-border{*/
-    /*border: 1px solid gray;*/
+/*border: 1px solid gray;*/
 /*}*/
 /*.unordered-list {*/
 /*list-style-type: none;*/
 /*padding: 40px;*/
 /*}*/
 
-.list{
-display: inline-flex;
+.list {
+    display: inline-flex;
 }
 
-#livemusicpic{
-width: 130px;
-height: 130px;
+#livemusicpic {
+    width: 130px;
+    height: 130px;
 }
-.i{
+
+.i {
     width: auto;
     height: auto;
 }
-#project-title{
-padding-top: 30px;
-margin-top: 30px;
-padding-bottom: 30px;
-margin-bottom: 30px;
+
+#project-title {
+    padding-top: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
-#pgcnt{
-margin-top: 50px;
+#pgcnt {
+    margin-top: 50px;
 }
-#body-content{
-/*padding: 30px;*/
-border: 1px solid gray;
+
+#body-content {
+    /*padding: 30px;*/
+    border: 1px solid gray;
 }
+
 .body-margin {
-border: 1px solid gray;
+    border: 1px solid gray;
 
-padding: 60px;
-}
-.navBar{
-margin-top: 40px;
-margin-bottom: 40px;
-
-}
-a:hover{
-text-decoration: none;
-border-bottom: 2px solid black;
-border-top: 2px solid black;
+    padding: 60px;
 }
 
-.p-title{
-margin-top: 30px;
-margin-bottom: 30px;
+.navBar {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
 }
 
+a:hover {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
 
-.foot{
+.p-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.foot {
     margin-bottom: 60px;
 }
 
-.span-icon{
+.span-icon {
     margin-left: 20px;
     margin-bottom: 15px;
 }
+
 /*#skills{*/
-    /*margin-top: 0px;*/
-    /*padding-bottom:0;*/
+/*margin-top: 0px;*/
+/*padding-bottom:0;*/
 /*}*/
 /*.bullet{*/
-    /*list-style-type:square;*/
-    /*margin-bottom: 12px;*/
-    /*margin-top: 30px;*/
+/*list-style-type:square;*/
+/*margin-bottom: 12px;*/
+/*margin-top: 30px;*/
 /*}*/
-#b{
+#b {
     background-color: gray;
     border-bottom: 2px solid black;
     border-top: 2px solid black;
 
 }
-#head{
-    background-color: #31b0d5;
+
+#head {
+    background-color: #2a94d5;
     border-bottom: 2px solid black;
-    border-top: 2px solid black;  }
+    border-top: 2px solid black;
+}
 
-
-
-
-
-
-
-
-
-
-.bottom-links:hover{
+.bottom-links:hover {
     border: none;
 }
-@media (min-width: 576px) {
-    .nav-link {
-        display: inline-flex;
-        color: red;
-    }
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .p-title {
-        font-size: 10px;
-    }
-    .r , #skills {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: lightgray;
-    }
-
-}
 
 
 
 
-@media (min-width: 1200px) {}
 
-
-@media(min-width:320px) {
-    #skills, .u, .d, .bullet {
-        margin-left: 0;
-        padding-left: 0;
-        padding-right: 0;
-        margin-right:0;
-
-
-
-    }
-    .d{
-        width: 33.3%;
-
-
-    }
-
-    .u{
-
-    }
-#skills{
-
-    margin: 10px;
-
-}
-
-}
-/*@media(min-width:320px){*/
-    /*#1, #2, #3 {*/
-        /*margin-left: 0;*/
-        /*padding-left: 0;*/
-        /*padding-right: 0;*/
-        /*margin-right:0;*/
+/*@media (min-width: 992px) and (max-width: 1199px) {*/
+    /*.p-title {*/
+        /*font-size: 10px;*/
     /*}*/
-/*}*/
+
+    /*#skills {*/
+
+        /*align-items: center;*/
+        /*background: lightgray;*/
+    /*}*/
+
+    /*.d {*/
+        /*display: flex;*/
+    /*}*/
+
+    /*.bullet {*/
+        /*display: inline-block;*/
+    /*}*/
+
+    @media (min-width: 320px) {
+        #skills {
+
+
+
+
+        }
+
+        .div-ul {
+            width: 33.3%;
+
+
+
+
+
+        }
+        .h4-text{
+            font-size: 15px;
+        }
+
+        .unordered {
+            padding: 0;
+
+        }
+
+
+
+        .bq {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .s{
+            background-color: papayawhip;
+            width: 100%;
+            border-bottom-left-radius: 25px;
+            border-top-right-radius: 25px;
+            opacity: .9;
+            height: 150px;
+        }
+
+    }
+@media (min-width: 768px) {
+    .s{
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+
+}
+
+
 
 
 
