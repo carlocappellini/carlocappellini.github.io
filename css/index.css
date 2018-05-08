@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 html, body {
-    background-color: #7f8a61;
-    font-family: 'Anton', 'sans-serif;';
+    background-color: #33578a;
+    font-family: 'Ubuntu', sans-serif;
 }
+
+/**{*/
+/*border: 1px solid black;*/
+/*}*/
 
 /*.page-border{*/
 /*border: 1px solid gray;*/
@@ -75,15 +79,6 @@ a:hover {
     margin-bottom: 15px;
 }
 
-/*#skills{*/
-/*margin-top: 0px;*/
-/*padding-bottom:0;*/
-/*}*/
-/*.bullet{*/
-/*list-style-type:square;*/
-/*margin-bottom: 12px;*/
-/*margin-top: 30px;*/
-/*}*/
 #b {
     background-color: gray;
     border-bottom: 2px solid black;
@@ -101,76 +96,61 @@ a:hover {
     border: none;
 }
 
-
-
-
-
-/*@media (min-width: 992px) and (max-width: 1199px) {*/
-    /*.p-title {*/
-        /*font-size: 10px;*/
-    /*}*/
-
-    /*#skills {*/
-
-        /*align-items: center;*/
-        /*background: lightgray;*/
-    /*}*/
-
-    /*.d {*/
-        /*display: flex;*/
-    /*}*/
-
-    /*.bullet {*/
-        /*display: inline-block;*/
-    /*}*/
-
-    @media (min-width: 320px) {
-        #skills {
-
-
-
-
-        }
-
-        .div-ul {
-            width: 33.3%;
-
-
-
-
-
-        }
-        .h4-text{
-            font-size: 15px;
-        }
-
-        .unordered {
-            padding: 0;
-
-        }
-
-
-
-        .bq {
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        .s{
-            background-color: papayawhip;
-            width: 100%;
-            border-bottom-left-radius: 25px;
-            border-top-right-radius: 25px;
-            opacity: .9;
-            height: 150px;
-        }
+@media (min-width: 320px) {
+    #skills {
 
     }
+
+    .div-ul {
+        width: 33.3%;
+
+    }
+
+    .h4-text {
+        font-size: 15px;
+    }
+
+    .unordered {
+        padding: 0;
+
+    }
+
+    .bq {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .skill-back {
+        background-color: #ff6e5a;
+        width: 100%;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 25px;
+        opacity: .9;
+        height: 150px;
+    }
+
+    .r {
+        border: 1px solid black;
+        height: 100%
+    }
+    .navb{
+        background-color: #8c8c8c;
+        height: auto;
+        border-radius: 25px;
+
+    }
+
+.sum{
+        border-radius: 25px;
+    }
+
+}
+
 @media (min-width: 768px) {
-    .s{
+    .skill-back {
         margin-right: 0;
         padding-right: 0;
     }
-
 
 }
 
