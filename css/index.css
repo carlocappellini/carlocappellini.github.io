@@ -123,10 +123,9 @@ a:hover {
     .skill-back {
         background-color: #ff6e5a;
         width: 100%;
-        border-bottom-left-radius: 25px;
-        border-top-right-radius: 25px;
         opacity: .9;
         height: 150px;
+        border-radius: 25px;
     }
 
     .r {
