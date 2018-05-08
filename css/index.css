@@ -5,17 +5,6 @@ html, body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-/**{*/
-/*border: 1px solid black;*/
-/*}*/
-
-/*.page-border{*/
-/*border: 1px solid gray;*/
-/*}*/
-/*.unordered-list {*/
-/*list-style-type: none;*/
-/*padding: 40px;*/
-/*}*/
 
 .list {
     display: inline-flex;
@@ -118,6 +107,9 @@ a:hover {
     .bq {
         margin-top: 30px;
         margin-bottom: 30px;
+        background-color: lightgray;
+        opacity: .9;
+        border-radius: 10px;
     }
 
     .skill-back {
@@ -125,7 +117,7 @@ a:hover {
         width: 100%;
         opacity: .9;
         height: 150px;
-        border-radius: 25px;
+        border-radius: 10px;
     }
 
     .r {
@@ -133,17 +125,68 @@ a:hover {
         height: 100%
     }
     .navb{
-        background-color: #8c8c8c;
-        height: auto;
-        border-radius: 25px;
+        background-color: lightgray;
+        height: 30px;
+        border-radius: 10px;
+        opacity: .8;
+
 
     }
 
 .sum{
-        border-radius: 25px;
+        border-radius: 10px;
+    top: 8px;
     }
 
 }
+.im,.b{
+    border-radius: 10px;
+
+}
+#bio,#head, #b{
+    border-radius: 25px;
+}
+.bold, .contact-me{
+    font-weight: bold;
+}
+.paragraph,  .h4-text{
+    font-size: 18px;
+}
+.anchor{
+    color: #0c000f;
+    font-weight: bold;
+    opacity: .6;
+
+}
+.anchor:hover{
+    color: black;
+    opacity: .7;
+
+}
+.contact-me {
+    font-size: 30px;
+    color: black;
+    opacity: .6;
+}
+.anchorp{
+    color: darkgrey;
+    font-size: 15px;
+    font-weight: bold;
+}
+#skills{
+    height: 200px;
+    margin-bottom: 10px;
+}
+/*.i{*/
+    /*width: 300px;*/
+/*}*/
+.nav-link{
+    display: inline;
+}
+.color{
+    border-radius: 10px;
+    padding: 10px;
+background-color: lightgray}
 
 @media (min-width: 768px) {
     .skill-back {
