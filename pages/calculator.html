@@ -8,18 +8,20 @@
 
 </head>
 <body>
-<script src="../js/calculator.js"></script>
+<a href="../index.html"><h3>Home</h3></a>
+
 <div id="wrapper">
+
     <div class="container">
         <h3>CALCULATOR</h3>
+
 
         <form name="calculator">
 
             <div class="row-col">
-                <div><input type="text" value=""  class="big-column-one" name="left" readonly></div>
-                <div><input type="text" value=""  class="operator" name="operator" readonly></div>
-                <div><input type="text" value=""  class="big-column-two" name="right" readonly></div>
-
+                <div><input type="text" value="" class="big-column-one" name="left" readonly></div>
+                <div><input type="text" value="" class="operator" name="operator" readonly></div>
+                <div><input type="text" value="" class="big-column-two" name="right" readonly></div>
 
 
             </div>
@@ -49,10 +51,13 @@
                 </div>
                 <br>
                 <div>
-                    <input type="button" name="C" class="clear buttons digit operator eqandc decimal" value="C" onClick="runClear()">
+                    <input type="button" name="C" class="clear buttons digit operator eqandc decimal" value="C"
+                           onClick="runClear()">
                     <input type="button" name="0" value="0" class="buttons digit " onClick="btnClick(this)">
-                    <input type="button" name="decimal" value="." class="buttons digit decimal operator decimal-point" onClick="btnClick(this)">
-                    <input type="button" name="=" class="eval buttons digit operator eqandc decimal" value="=" onClick="total()">
+                    <input type="button" name="decimal" value="." class="buttons digit decimal operator decimal-point"
+                           onClick="btnClick(this)">
+                    <input type="button" name="=" class="eval buttons digit operator eqandc decimal" value="="
+                           onClick="total()">
                     <input type="button" name="/" class="operator buttons decimal" value="/" onClick="operClick(this)">
                 </div>
 

@@ -1,17 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 html, body {
-    background-color: #7f8a61;
-    font-family: 'Anton', 'sans-serif;';
+    background-color: #33578a;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-/*.page-border{*/
-/*border: 1px solid gray;*/
-/*}*/
-/*.unordered-list {*/
-/*list-style-type: none;*/
-/*padding: 40px;*/
-/*}*/
 
 .list {
     display: inline-flex;
@@ -75,15 +68,6 @@ a:hover {
     margin-bottom: 15px;
 }
 
-/*#skills{*/
-/*margin-top: 0px;*/
-/*padding-bottom:0;*/
-/*}*/
-/*.bullet{*/
-/*list-style-type:square;*/
-/*margin-bottom: 12px;*/
-/*margin-top: 30px;*/
-/*}*/
 #b {
     background-color: gray;
     border-bottom: 2px solid black;
@@ -101,76 +85,114 @@ a:hover {
     border: none;
 }
 
-
-
-
-
-/*@media (min-width: 992px) and (max-width: 1199px) {*/
-    /*.p-title {*/
-        /*font-size: 10px;*/
-    /*}*/
-
-    /*#skills {*/
-
-        /*align-items: center;*/
-        /*background: lightgray;*/
-    /*}*/
-
-    /*.d {*/
-        /*display: flex;*/
-    /*}*/
-
-    /*.bullet {*/
-        /*display: inline-block;*/
-    /*}*/
-
-    @media (min-width: 320px) {
-        #skills {
-
-
-
-
-        }
-
-        .div-ul {
-            width: 33.3%;
-
-
-
-
-
-        }
-        .h4-text{
-            font-size: 15px;
-        }
-
-        .unordered {
-            padding: 0;
-
-        }
-
-
-
-        .bq {
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-        .s{
-            background-color: papayawhip;
-            width: 100%;
-            border-bottom-left-radius: 25px;
-            border-top-right-radius: 25px;
-            opacity: .9;
-            height: 150px;
-        }
+@media (min-width: 320px) {
+    #skills {
 
     }
+
+    .div-ul {
+        width: 33.3%;
+
+    }
+
+    .h4-text {
+        font-size: 15px;
+    }
+
+    .unordered {
+        padding: 0;
+
+    }
+
+    .bq {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        background-color: lightgray;
+        opacity: .9;
+        border-radius: 10px;
+    }
+
+    .skill-back {
+        background-color: #ff6e5a;
+        width: 100%;
+        opacity: .9;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    .r {
+        border: 1px solid black;
+        height: 100%
+    }
+    .navb{
+        background-color: lightgray;
+        height: 30px;
+        border-radius: 10px;
+        opacity: .8;
+
+
+    }
+
+.sum{
+        border-radius: 10px;
+    top: 8px;
+    }
+
+}
+.im,.b{
+    border-radius: 10px;
+
+}
+#bio,#head, #b{
+    border-radius: 25px;
+}
+.bold, .contact-me{
+    font-weight: bold;
+}
+.paragraph,  .h4-text{
+    font-size: 18px;
+}
+.anchor{
+    color: #0c000f;
+    font-weight: bold;
+    opacity: .6;
+
+}
+.anchor:hover{
+    color: black;
+    opacity: .7;
+
+}
+.contact-me {
+    font-size: 30px;
+    color: black;
+    opacity: .6;
+}
+.anchorp{
+    color: darkgrey;
+    font-size: 15px;
+    font-weight: bold;
+}
+#skills{
+    height: 200px;
+    margin-bottom: 10px;
+}
+/*.i{*/
+    /*width: 300px;*/
+/*}*/
+.nav-link{
+    display: inline;
+}
+.color{
+    border-radius: 10px;
+    padding: 10px;
+background-color: lightgray}
+
 @media (min-width: 768px) {
-    .s{
+    .skill-back {
         margin-right: 0;
         padding-right: 0;
     }
-
 
 }
 
